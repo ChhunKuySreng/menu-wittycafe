@@ -10,10 +10,10 @@ export default function routes() {
     <Router basename={IS_APP_PRODUCTION ? "" : APP_NAME}>
       <Routes>
         <Route path="/" element={<BasePage />}>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
         </Route>
-        <Route path="/*" element={<Navigate to="/home" />} />
+        <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );

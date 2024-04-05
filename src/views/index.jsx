@@ -7,7 +7,7 @@ import Menu from "./web/menu";
 
 export default function Index() {
   const routeItems = [
-    {path: "/home", element: <Home />},
+    {path: "/", element: <Home />},
     {path: "/menu", element: <Menu />},
   ];
   return (
@@ -17,7 +17,7 @@ export default function Index() {
         {routeItems.map(({path, element}) => (
           <Route key={path} path={path} element={element} />
         ))}
-        <Route path="/*" element={<Navigate to="/home" />} />
+        <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
     </Box>
   );
