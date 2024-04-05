@@ -1,18 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import {Box} from "@chakra-ui/react";
 import Navbar from "../components/navbar";
 import {Navigate, Route, Routes} from "react-router-dom";
 import Home from "./web/home";
-import Menu from "./web/menu";
 
 export default function Index() {
-  const routeItems = [
-    {path: "/", element: <Home />},
-    {path: "/menu", element: <Menu />},
-  ];
+  const [searchQuery, setSearchQuery] = useState("");
+  const routeItems = [{path: "/", element: <Home setSearchQuery={setSearchQuery} searchQuery={searchQuery} />}];
   return (
-    <Box maxW={"36rem"} h={"100vh"} m={"auto"} bg={"#CA9856"}>
-      <Navbar />
+    <Box maxW={"36rem"} minH="100vh" h={"100%"} m={"auto"} bg={"#CA9856"}>
+      <Navbar setSearchQuery={setSearchQuery} />
       <Routes>
         {routeItems.map(({path, element}) => (
           <Route key={path} path={path} element={element} />
