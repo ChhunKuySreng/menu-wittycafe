@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/menu-wittycafe/static/css/main.b27a2e8b.css",
-    "main.js": "/menu-wittycafe/static/js/main.afdb3695.js",
+    "main.js": "/menu-wittycafe/static/js/main.21041482.js",
     "static/js/453.4fe964bb.chunk.js": "/menu-wittycafe/static/js/453.4fe964bb.chunk.js",
     "index.html": "/menu-wittycafe/index.html",
     "main.b27a2e8b.css.map": "/menu-wittycafe/static/css/main.b27a2e8b.css.map",
-    "main.afdb3695.js.map": "/menu-wittycafe/static/js/main.afdb3695.js.map",
+    "main.21041482.js.map": "/menu-wittycafe/static/js/main.21041482.js.map",
     "453.4fe964bb.chunk.js.map": "/menu-wittycafe/static/js/453.4fe964bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b27a2e8b.css",
-    "static/js/main.afdb3695.js"
+    "static/js/main.21041482.js"
   ]
 }
